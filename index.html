@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tic tac toe.css">
+    <style>
+        body{
+            background-image: linear-gradient(200deg,rgb(154, 154, 239),aqua);
+            background-repeat: no-repeat;
+            height:1200px;
+            width: 1000px;
+        } 
+        
+        
+        
+        #box{
+            display: none;
+            margin-top: 300px;
+            margin-left: 450px;
+        }
+
+        #index{
+            margin-top: 300px;
+            margin-left: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div id="index" >
+        <h1>Tic Tac Toe</h1>
+        <label>Player 1:</label>
+        <input type="text" name="Player 1" placeholder="Enter Your Name " id="player1" ><br><br>
+
+        <label>Player 2:</label>
+        <input type=" text" name="Player 2" placeholder="Enter Your Name" id="player2"><br><br>
+
+        <button id="btn">Start Game </button>
+
+
+
+
+    </div>
+    <div id="box">
+        <h1>TIC TAC TOE</h1>
+        <div id="winner" style="height: 100px; width: 200px;"></div>
+
+        <div>
+            <h1>X:-<span id="user1-name"></span> -<span id="user1-score">0</span></h1>
+            <h1>O:-<span id="user2-name"></span> -<span id="user2-score">0</span></h1>
+
+        </div>
+    <table cellspacing="0" cellpadding="20" id="table">
+    <tr>
+        <td class="border-right border-bottom" id="0"></td>
+        <td class="border-right border-bottom" id="1"></td>
+        <td class="border-bottom" id="2"></td>
+
+
+    </tr>
+
+    <tr>
+        <td class="border-right border-bottom" id="3"></td>
+        <td class="border-right border-bottom" id="4"></td>
+        <td class="border-bottom" id="5"></td>
+
+
+    </tr>
+
+    <tr>
+        <td class="border-right" id="6"></td>
+        <td class="border-right" id="7"></td>
+        <td id="8"></td>
+
+
+    </tr>
+    
+</table><br><br>
+<div style="margin-left: 160px;">
+<button id="btn1">RESTART</button>
+<button id="btn2">RESET</button>
+</div>
+</div>
+<script src="tic tac toe.js"></script>
+</body>
+</html>
